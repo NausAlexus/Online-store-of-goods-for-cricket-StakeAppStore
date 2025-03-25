@@ -496,6 +496,467 @@ body::-webkit-scrollbar-track {
     }
 }
 
+
+
+.company-history {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-title {
+    font-size: 2.5em;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.2em;
+    color: #495057;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2em;
+    }
+
+    .about-text {
+        font-size: 1em;
+    }
+}
+
+
+
+
+.product-applications {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.applications-blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.applications-image-block {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.product-applications-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.applications-text-block {
+    flex: 1 1 55%;
+    margin: 10px;
+}
+
+.applications-text-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.applications-product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.applications-benefits-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.applications-benefits-list li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .applications-blocks-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .applications-image-block, .applications-text-block {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.store-gallery__concept-section {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.store-gallery__concept-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.store-gallery__concept-team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.store-gallery__concept-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 20px);
+    transition: transform 0.3s;
+}
+
+.store-gallery__concept-card:hover {
+    transform: scale(1.05);
+}
+
+.store-gallery__concept-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.store-gallery__concept-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.store-gallery__concept-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .store-gallery__concept-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .store-gallery__concept-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.store-gallery__learn-more-btn {
+    display: inline-block;
+    background-color: #a6ff00;
+    color: #34495e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+
+
+
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-title {
+        font-size: 1.5em;
+    }
+}
+
+.reviews-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 100px;
+    height: 3px;
+    background-color: #ff6b00;
+    margin: 0 auto 20px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.review h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.review p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.review-img{
+    width: 150px;
+    border-radius: 100px;
+}
+
+
+
+
+  
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    gap: 30px;
+    padding: 10px;
+    color: #000000;
+  }
+  
+  .form-image {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .form-content {
+    flex: 1;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #dcdcdd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+
+  }
+  
+  .form-content h2 {
+    font-size: 1.8rem;
+    color: #000000c2;
+    margin-bottom: 20px;
+  }
+  
+  .form-content input,
+  .form-content textarea,
+  .form-content button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;      
+    max-width: 100%;  
+    resize: vertical;  
+    padding: 10px;     
+    font-size: 1rem;  
+    border-radius: 8px;
+    box-sizing: border-box;  
+    max-height: 260px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  .form-content textarea{
+    margin-top: 10px;
+  }
+  
+  .form-content button {
+    background-color: #949494;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .form-content label {
+    font-size: 1rem;
+    color: #000000;
+
+    
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+  }
+  
+  .checkbox input {
+    margin-right: 10px;
+    width: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .checkbox label a {
+    color: #2506f1;
+    text-decoration: none;
+    text-wrap: nowrap;
+  
+  }
+  .whiteText{
+    color: rgb(0, 0, 0);
+  }
+  
+  .checkbox label a:hover {
+    text-decoration: underline;
+  }
+
+  .form-content button:hover {
+    background-color: #3e3e3e;
+
+  }
+
+
+
+
+  @media (max-width:1000px) {
+    .contact-form-container{
+        flex-direction: column;
+        
+    }
+    .form-image{
+        max-width: 90%;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.thank-you-container {
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .thank-you-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .thank-you-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width:426px) {
+    .parallax-content{
+        padding: 15px;
+      }
+    
+  }
 .privacy-policy {
     padding: 20px;
     background-color: #f9f9f9;
@@ -630,7 +1091,55 @@ body::-webkit-scrollbar-track {
     .menu-button:hover {
         background-color: #dbb807;
     }
-    .contact-privac-terms:hover{
-        text-decoration: underline;
-    }
+}
+
+
+
+
+.reviews-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 100px;
+    height: 3px;
+    background-color: #000000;
+    margin: 0 auto 20px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.review h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.review p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
