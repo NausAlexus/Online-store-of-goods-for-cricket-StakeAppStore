@@ -77,7 +77,7 @@
         </section>
 
 
-        <section class="company-history">
+        <section class="company-history" id="about">
             <h1 class="about-title">Our Mission</h1>
             <p class="about-text">
                 At StakeAppStore, our mission is to become a leader in providing cricket gear and sporting equipment in India. We strive to offer high-quality products that meet the needs of players at every level, from beginners to professionals.
@@ -111,7 +111,7 @@
         </section>
 
 
-        <section class="store-gallery__concept-section">
+        <section class="store-gallery__concept-section" id="catalog">
             <h2>Store Gallery</h2>
             <p>Welcome to our exclusive Store Gallery! Here, you'll find a curated selection of high-quality cricket equipment that reflects our commitment to excellence and innovation. Each item is chosen to enhance your game, providing comfort and confidence on the field. Explore our collection and discover the perfect gear to elevate your performance!</p>
             <div class="store-gallery__concept-team-cards">
@@ -224,6 +224,62 @@
                 <p>"StakeAppStore is the epitome of excellence in cricket gear. The attention to detail in their products is evident, and it's clear they prioritize safety and performance above all else. I recently invested in a new set of batting gloves, and the difference they've made in my comfort and control is remarkable."</p>
             </div>
         </section>
+
+
+
+        <section id="form" class="contact-form-section">
+            <div class="contact-form-container" id="contact">
+
+                <div class="form-content">
+                    <h1 class="whiteText">Connect with us</h1>
+                    <p>We are always ready to listen to you and answer your questions. Please use this form to contact us. We value your opinion and promise to consider each request carefully.</p>
+                    <form action="/thanks_form.php" method="post">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        />
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Enter your comment"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                        <div class="checkbox">
+                            <input
+                                type="checkbox"
+                                id="privacy-policy"
+                                value="on"
+                                name="privacy"
+                                required
+                            />
+                            <label for="privacy-policy">
+                                I agree to the
+                                <a href="/privacy-policy/"
+                                    >Privacy Policy</a
+                                >
+                            </label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     
     
     
