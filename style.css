@@ -333,17 +333,9 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
 .promo-section {
     margin-top: -46px;
-    background-image: url('../img/main-bg.jpg');
+    background-image: url('img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -386,25 +378,22 @@ body::-webkit-scrollbar-track {
 .menu-button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #d20000;
-    color: white;
+    padding: 20px 40px;
+    background-color: #ffd814;
+    color: black;
     text-decoration: none;
     border-radius: 20px;
+    font-size: 24px;
     transition: background-color 0.3s ease,
                 color 0.3s ease;
 }
 
 @media (max-width: 768px) {
     .promo-content h2 {
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
     .promo-content p {
         font-size: 1.2em;
-    }
-
-    .menu-button {
-        padding: 8px 16px;
     }
 }
 
@@ -416,6 +405,104 @@ body::-webkit-scrollbar-track {
         font-size: 1.0em;
     }
 }
+
+.info-brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.info-brand-flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info-brand-flex {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-brand-block {
+    flex: 1 1 45%;
+    display: flex;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-brand-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.info-brand-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info-brand-description {
+    font-size: 1em;
+}
+
+.info-brand-image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.name-section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.name-section-text {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .name-section-title {
+        font-size: 2rem;
+    }
+    
+    .name-section-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name-section-title {
+        font-size: 1.5rem;
+    }
+    
+    .name-section-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-brand-block {
+        flex-direction: column;
+    }
+
+    .info-brand-image {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -445,5 +532,8 @@ body::-webkit-scrollbar-track {
     }
     .contact-footer:hover {
         color: black;
+    }
+    .menu-button:hover {
+        background-color: #dbb807;
     }
 }
